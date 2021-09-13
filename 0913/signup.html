@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Form control: input</h2>
+  <p>The form below contains input elements; one of type text and one of type password:</p>
+<table width="700px">
+  <form action="/action_page.php">
+  <tr>
+    <td colspan="4">
+    <div class="form-group">
+      <label for="usr">Name:</label>
+      <input type="text" class="form-control" id="usr" name="username">
+    </div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4">
+    <div class="form-group">
+      <label for="id">ID:</label>
+      <input type="text" class="form-control" id="id" name="id">
+    </div>
+  </td>
+</tr>
+<tr>
+  <td colspan="4">
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" name="password">
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><label for="hp1">전화번호:</label></td>
+  <td><input type="text" class="form-control" id="hp1" name="tel1"></td>
+  <td>-</td>
+  <td><input type="text" class="form-control" id="hp2" name="tel2"></td>
+  <td>-</td>
+  <td><input type="text" class="form-control" id="hp3" name="tel3"></td>
+</tr>
+
+<tr>
+  <td><label for="job">직업:</label></td>
+  <td>
+      <select class="form-control" id="sel1" name="sellist1">
+        <option>학생</option>
+        <option>교사</option>
+        <option>의사</option>
+        <option>자영업</option>
+      </select>
+  </td>
+</tr>
+<tr>
+  <td><label for="gen">성별:</label></td>
+  <td>
+      <input type="radio" class="form-check-input" id="radio2" name="optradio" value="남자">남자
+  </td>
+  <td>
+      <input type="radio" class="form-check-input" id="radio1" name="optradio" value="여자" checked>여자
+  </td>
+</tr>
+<tr>
+  <td>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </td>
+ </tr>
+</form>
+</table>
+</div>
+
+</body>
+</html>

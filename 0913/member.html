@@ -1,0 +1,52 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>회원 정보 입력</title>
+    <style>
+      h3,#b{ text-align:center; }
+      #id, #pw, #na{width:150px;}
+      #tel0, #tel1,#tel2{width:50px;}
+      #ta {width:300px; height: 100px;}
+    </style>
+  </head>
+
+  <body>
+    <h3>회원 정보 입력</h3>
+    <hr>
+    <table>
+      <tr>
+        <td>아이디</td><td><input type="text" id="id"></td>
+      </tr>
+      <tr>
+        <td>비밀번호</td><td><input type="password" id="pw"></td>
+      </tr>
+      <tr>
+        <td>이름</td><td><input type="text" id="na"></td>
+      </tr>
+      <tr>
+        <td>전화번호</td><td><input type="text" id="tel0" value="02">-<input type="text" id="tel1">-
+          <input type="text" id="tel2"></td>
+      </tr>
+      <tr>
+        <td>직업</td><td>
+          <select>
+            <option>학생</option>
+            <option>교사</option>
+            <option>자영업 </option>
+          </select></td>
+      </tr>
+      <tr>
+        <td>성별</td><td><input type="radio" checked name="gen">남자<input type="radio" name="gen">&nbsp;여자</td>
+      </tr>
+      <tr>
+        <td>취미</td><td><input type="checkbox" checked>독서<input type="checkbox">운동<input type="checkbox">영화</td>
+      </tr>
+      <tr>
+        <td>자기소개</td><td><textarea id="ta">자기소개하는 글을 적으세요.</textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" id="b"><input type="submit" value="전송">&nbsp;&nbsp;<input type="reset" value="취소"></td>
+      </tr>
+    </table>
+  </body>
+</html>
