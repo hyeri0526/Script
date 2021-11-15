@@ -1,0 +1,32 @@
+<html>
+    <head><title>배열 객체 사용하기</title>
+    <script>
+        Language = new Array("HTML", "javascript", "ASP", "JSP", "PHP");
+
+        for(var i = 0; i< Language.length; i++){
+            document.write(Language[i]+ " ");
+        }
+        document.write("<br>=========================<br>");
+        Language.sort();
+        for(var i = 0; i< Language.length; i++){
+            document.write(Language[i]+ " ");
+        }
+        document.write("<br>=========================<br>");
+        Language.reverse();
+        for(var i = 0; i< Language.length; i++){
+            document.write(Language[i]+ " ");
+        }
+        document.write("<br>=========================<br>");
+        Language.pop(); // 마지막 원소 꺼냄. 변수에 담을 수 있음.
+        for(var i = 0; i< Language.length; i++){
+            document.write(Language[i]+ " ");
+        }
+        document.write("<br>=========================<br>");
+        Language.shift(); // 왼쪽으로 밀었음.
+        for(var i = 0; i< Language.length; i++){
+            document.write(Language[i]+ " ");
+        }
+        document.write("<br>=========================<br>");
+    </script>
+    </head>
+</html>

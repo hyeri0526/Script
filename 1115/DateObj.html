@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Date 객체사용하기</title>
+    <script>
+        currentNow = new Date();
+        document.write("<b> 현재 날짜</b><br>");
+        document.write(currentNow + "<br><br>");
+
+        theYear = currentNow.getFullYear();
+        theMonth = currentNow.getMonth()+1;
+        theDay = currentNow.getDate();
+
+        document.write(theYear+"년 "+theMonth+"월 "+theDay+"일");
+    </script>
+    </head>
+    <body>
+    </body>
+</html>
